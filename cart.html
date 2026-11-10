@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17233D">
+  <title>Your Shopping Bag | StyleNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Style<span>Nest</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="account.html">Account</a>
+    </nav>
+    <a class="header-cart" href="cart.html" aria-current="page">Bag <span id="header-cart-count">0</span></a>
+  </header>
+
+  <main class="cart-page">
+    <div class="page-heading">
+      <p class="eyebrow">YOUR STYLE, YOUR SELECTION</p>
+      <h1>Shopping Bag</h1>
+      <p class="heading-subtitle">Review your favourites before you make them yours.</p>
+    </div>
+
+    <div class="cart-layout">
+      <section class="cart-main" aria-label="Shopping bag items">
+        <div class="cart-list-heading"><span id="items-heading">Your items (0)</span><a href="shop.html">Continue shopping</a></div>
+        <div id="cart-items"></div>
+      </section>
+
+      <aside class="order-card" aria-label="Order summary">
+        <h2>Order Summary</h2>
+        <div class="summary-line"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+        <div class="summary-line"><span>Delivery</span><strong id="delivery">₹0</strong></div>
+        <p class="shipping-note" id="shipping-note">Shipping is calculated at checkout.</p>
+        <div class="summary-total"><span>Total</span><strong id="total">₹0</strong></div>
+        <a class="checkout-button" id="checkout-button" href="checkout.html">Proceed to Checkout <span>→</span></a>
+        <div class="secure-note"><span>✓</span> Secure checkout experience</div>
+        <div class="payment-note">Demo store · No real payment will be collected</div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">Style<span>Nest</span></a>
+    <p>Everyday style, thoughtfully selected.</p>
+    <small>© 2026 StyleNest. Frontend demonstration project.</small>
+  </footer>
+  <div class="toast" id="cart-toast" role="status" aria-live="polite"></div>
+  <script src="js/cart.js"></script>
+</body>
+</html>

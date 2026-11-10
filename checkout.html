@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17233D"><title>Checkout | StyleNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">Style<span>Nest</span></a><nav><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="cart.html">Bag</a></nav><span class="secure-label">✓ Secure checkout</span></header>
+<main class="checkout-page">
+  <div class="heading"><p class="eyebrow">ALMOST YOURS</p><h1>Checkout</h1><p>Complete your details to place your demo order.</p></div>
+  <div class="checkout-layout" id="checkout-layout">
+    <form class="checkout-form" id="checkout-form" novalidate>
+      <section class="form-card"><h2>1. Contact information</h2>
+        <div class="field-grid"><label>Full name<input name="fullName" autocomplete="name" required maxlength="70" placeholder="Your full name"></label><label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><label>Phone number<input name="phone" type="tel" autocomplete="tel" required inputmode="numeric" maxlength="10" pattern="[0-9]{10}" placeholder="10-digit mobile number"></label></div>
+      </section>
+      <section class="form-card"><h2>2. Delivery address</h2>
+        <div class="field-grid"><label class="full">Address<input name="address" autocomplete="street-address" required maxlength="160" placeholder="House number, street and area"></label><label>City<input name="city" autocomplete="address-level2" required maxlength="60" placeholder="City"></label><label>State<input name="state" autocomplete="address-level1" required maxlength="60" placeholder="State"></label><label>PIN code<input name="pin" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" required placeholder="6-digit PIN code"></label></div>
+      </section>
+      <section class="form-card"><h2>3. Payment method</h2><label class="payment-choice"><input type="radio" name="payment" value="Cash on Delivery (demo)" checked><span><strong>Cash on Delivery</strong><small>Demo option — no real payment is processed.</small></span></label><p class="demo-note">This is a frontend demonstration. Do not enter card details or make any payment.</p></section>
+      <p class="form-error" id="form-error" role="alert"></p>
+      <button class="place-order" type="submit">Place Demo Order <span>→</span></button>
+      <p class="terms-note">By placing this demo order, you are testing the website checkout flow.</p>
+    </form>
+    <aside class="summary-card"><h2>Your order</h2><div id="checkout-items" class="checkout-items"></div><div class="summary-line"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><div class="summary-line"><span>Delivery</span><strong id="delivery">₹0</strong></div><div class="summary-total"><span>Total</span><strong id="total">₹0</strong></div><a class="back-link" href="cart.html">← Return to bag</a></aside>
+  </div>
+  <section class="success-card" id="success-card" hidden><div class="success-mark">✓</div><p class="eyebrow">ORDER PLACED</p><h2>Thank you for shopping with StyleNest!</h2><p>Your demo order <strong id="order-number"></strong> has been recorded in this browser. No payment was taken.</p><a class="place-order success-link" href="shop.html">Continue shopping →</a></section>
+</main>
+<footer class="site-footer"><a class="brand" href="index.html">Style<span>Nest</span></a><p>Everyday style, thoughtfully selected.</p><small>© 2026 StyleNest · Frontend demo store</small></footer>
+<script src="js/checkout.js"></script>
+</body></html>

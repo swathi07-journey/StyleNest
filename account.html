@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | StyleNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="account-page">
+    <div class="account-heading"><p class="eyebrow">YOUR STYLENEST SPACE</p><h1>My Account</h1><p>Manage your details and view your recent order.</p></div>
+    <div class="account-grid">
+      <section class="account-card profile-card"><div class="card-heading"><div><p class="eyebrow">PERSONAL INFORMATION</p><h2>Profile details</h2></div><span class="profile-icon">♙</span></div>
+        <form id="profile-form">
+          <label for="full-name">Full name</label><input id="full-name" name="fullName" type="text" placeholder="Enter your name" required maxlength="70">
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required maxlength="100">
+          <label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="Enter phone number" maxlength="20">
+          <button class="account-button" type="submit">Save Profile</button><p class="form-message" id="profile-message" role="status"></p>
+        </form>
+      </section>
+      <section class="account-card orders-card"><div class="card-heading"><div><p class="eyebrow">YOUR PURCHASES</p><h2>Recent order</h2></div><span class="order-icon">▤</span></div>
+        <div id="order-content"><div class="empty-orders"><span>♡</span><h3>No order details yet</h3><p>Your latest demo order will appear here after checkout.</p><a href="shop.html">Explore the collection →</a></div></div>
+      </section>
+    </div>
+    <section class="account-card account-shortcuts"><p class="eyebrow">QUICK LINKS</p><div class="shortcut-links"><a href="shop.html">Continue shopping <span>→</span></a><a href="wishlist.html">My wishlist <span>→</span></a><a href="cart.html">Shopping bag <span>→</span></a></div></section>
+    <p class="account-note">StyleNest is a frontend demo. Profile and order information are stored locally in this browser only.</p>
+  </main>
+  <div id="site-footer"></div>
+ <script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/account.js"></script>
+</body></html>

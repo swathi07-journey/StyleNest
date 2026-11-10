@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore the StyleNest fashion collection for men and women.">
+<title>Shop All | StyleNest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/shop.css">
+</head><body>
+<div id="site-header"></div>
+<main class="shop-page">
+ <div class="shop-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Shop</span></div>
+ <section class="shop-heading"><div><span class="eyebrow">THE STYLENEST COLLECTION</span><h1>Find your <em>everyday favourite.</em></h1><p>Thoughtfully selected styles for wherever the day takes you.</p></div><div class="shop-heading-note">NEW SEASON<br><strong>2026 COLLECTION</strong></div></section>
+ <section class="shop-toolbar"><div class="shop-search"><span>⌕</span><input id="shopSearch" type="search" placeholder="Search products..." aria-label="Search products"></div>
+ <label class="sort-control">Sort by <select id="sortProducts"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Top Rated</option><option value="name">Name: A to Z</option></select></label></section>
+ <div class="shop-layout"><aside class="shop-filters"><div class="filter-title"><h2>Filters</h2><button id="clearFilters" type="button">Clear all</button></div>
+ <div class="filter-group"><h3>Category</h3>
+ <label><input type="checkbox" name="category" value="T-Shirts"> T-Shirts</label><label><input type="checkbox" name="category" value="Shirts"> Shirts</label><label><input type="checkbox" name="category" value="Tops"> Tops</label><label><input type="checkbox" name="category" value="Dresses"> Dresses</label><label><input type="checkbox" name="category" value="Jeans"> Jeans</label><label><input type="checkbox" name="category" value="Trousers"> Trousers</label><label><input type="checkbox" name="category" value="Jackets"> Jackets</label><label><input type="checkbox" name="category" value="Accessories"> Accessories</label></div>
+ <div class="filter-group"><h3>Shop for</h3><label><input type="checkbox" name="gender" value="Men"> Men</label><label><input type="checkbox" name="gender" value="Women"> Women</label></div>
+ <div class="filter-group"><h3>Price range</h3><div class="price-values"><span>$0</span><span id="maxPriceLabel">$100</span></div><input id="maxPrice" type="range" min="10" max="100" step="5" value="100"></div></aside>
+ <section class="shop-results"><div class="results-top"><p id="resultCount" aria-live="polite">Showing products</p><button class="mobile-filter-toggle" id="mobileFilterToggle" type="button">Filters ＋</button></div>
+ <div class="product-grid" id="shopProductGrid"></div><div class="empty-results" id="emptyResults" hidden><h2>No products found</h2><p>Try changing your search or filters.</p><button class="button button-dark" id="emptyClear" type="button">Clear filters</button></div>
+ <div class="load-more-wrap"><button class="button button-outline" id="loadMore" type="button">Load more products</button></div></section></div>
+</main><div id="site-footer"></div>
+<script src="js/main.js"></script><script src="js/products.js"></script><script src="js/shop.js"></script>
+</body></html>

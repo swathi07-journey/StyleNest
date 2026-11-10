@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore product details at StyleNest.">
+  <title>Product Details | StyleNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <header class="pd-header">
+    <a class="pd-brand" href="index.html">StyleNest<span>.</span></a>
+    <nav class="pd-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?gender=Men">Men</a>
+      <a href="shop.html?gender=Women">Women</a>
+    </nav>
+    <div class="pd-header-actions">
+      <a href="wishlist.html" aria-label="Wishlist">♡ <span>Wishlist</span></a>
+      <a href="cart.html" aria-label="Shopping bag">Bag</a>
+    </div>
+  </header>
+
+  <main class="pd-main">
+    <div class="pd-breadcrumb"><a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a><span>/</span><span id="breadcrumb-name">Product</span></div>
+
+    <section id="product-view" class="pd-product-layout" aria-live="polite">
+      <div class="pd-loading">Loading product details...</div>
+    </section>
+
+    <section class="pd-related-section" id="related-section" hidden>
+      <div class="pd-section-heading">
+        <div><p class="pd-eyebrow">YOU MAY ALSO LIKE</p><h2>Complete your look</h2></div>
+        <a href="shop.html" class="pd-view-all">View all products ↗</a>
+      </div>
+      <div class="pd-related-grid" id="related-products"></div>
+    </section>
+  </main>
+
+  <footer class="pd-footer">
+    <a class="pd-brand" href="index.html">StyleNest<span>.</span></a>
+    <p>Everyday style, thoughtfully selected.</p>
+    <a href="shop.html">Continue shopping</a>
+  </footer>
+
+  <!-- Keep products.js before product-details.js so the product catalogue is available. -->
+  <script src="js/products.js"></script>
+  <script src="js/product-details.js"></script>
+</body>
+</html>
